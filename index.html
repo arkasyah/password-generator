@@ -27,9 +27,23 @@
             id="passwordLength"
           />
           <label class="text-uppercase fw-bold" for="passowrd">Passowrd</label>
-          <input class="form-control" type="password" name="" id="password" />
-          <button class="btn btn-dark fw-bold">Generate Password</button>
-          <button class="btn btn-success fw-bold">Save Password</button>
+          <input
+            class="form-control"
+            type="text"
+            name=""
+            id="password"
+            disabled
+          />
+          <button onclick="getPassword()" class="btn btn-dark fw-bold">
+            Generate Password
+          </button>
+          <a
+            id="saveButton"
+            onclick="savePassword()"
+            class="btn btn-success fw-bold"
+          >
+            Save Password
+          </a>
         </div>
       </div>
     </div>
